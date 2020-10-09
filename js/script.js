@@ -7,5 +7,5 @@ $(document).ready(function(){
 	});
 	$(".bar").addClass("w3-bar-block w3-black");
 	$(".bar").css("height", "12px");
-	$("meta[rel='icon']").addClass("icon");
+	$("link[rel='icon']").addClass("icon");
 });
