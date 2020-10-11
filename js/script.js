@@ -1,3 +1,4 @@
+Modernizr.addTest('hasJquery', 'jQuery' in window);
 $(document).ready(function(){
 	$("#main").addClass("w3-container w3-flat-peter-river");
 	$("body").addClass("w3-flat-green-sea iconsize1 fontsize1");
