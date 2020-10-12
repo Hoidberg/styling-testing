@@ -4,6 +4,7 @@ const RenderHtmlApp = {
   data() {
     return {
 			mainTitle: '<h1>Styling Test</h1>',
+			bar: '<div class="w3-bar-block w3-black" style="height: 12px;"><div class="w3-bar-item"></div></div>',
 			cardTitle: '<p>This is a card</p>',
       cardDesc: '<p>A card is a container for any HTML content</p>'
     }
@@ -19,7 +20,5 @@ $(document).ready(function(){
 		"overflow": "hidden",
 		"font-family": "Open Sans, sans-serif"
 	});
-	$(".bar").addClass("w3-bar-block w3-black");
-	$(".bar").css("height", "12px");
 	$("link[rel='icon']").addClass("icon");
 });
