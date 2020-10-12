@@ -1,0 +1,7 @@
+.flex-space {
+  display: inline-flex;
+  width: calc(auto + 16px);
+  height: calc(auto + 16px);
+  justify-content: center;
+  align-items: center;
+}
