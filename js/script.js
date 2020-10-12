@@ -26,7 +26,7 @@ const RenderSymbols = {
 
 Vue.createApp(RenderHeader).mount('#header')
 Vue.createApp(RenderMain).mount('#main')
-Vue.createApp(RenderMain).mount('.symbol')
+Vue.createApp(RenderSymbols).mount('.symbol')
 
 $(document).ready(function(){
 	$("#main").addClass("w3-container w3-flat-peter-river");
