@@ -3,13 +3,14 @@ Modernizr.addTest('hasJquery', 'jQuery' in window);
 const RenderHtmlApp = {
   data() {
     return {
+			mainTitle: '<h1>Styling Test</h1>',
 			cardTitle: '<p>This is a card</p>',
       cardDesc: '<p>A card is a container for any HTML content</p>'
     }
   }
 }
 
-Vue.createApp(RenderHtmlApp).mount('#cardTest')
+Vue.createApp(RenderHtmlApp).mount('body')
 
 $(document).ready(function(){
 	$("#main").addClass("w3-container w3-flat-peter-river");
