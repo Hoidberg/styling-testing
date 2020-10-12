@@ -16,9 +16,17 @@ const RenderMain = {
 		}
 	}
 }
+const RenderSymbols = {
+	data() {
+		return {
+			third: '<h3 class="w3-center">&#8531;</h3>',
+		}
+	}
+}
 
 Vue.createApp(RenderHeader).mount('#header')
 Vue.createApp(RenderMain).mount('#main')
+Vue.createApp(RenderMain).mount('.symbol')
 
 $(document).ready(function(){
 	$("#main").addClass("w3-container w3-flat-peter-river");
