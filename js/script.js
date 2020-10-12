@@ -1,17 +1,24 @@
 Modernizr.addTest('hasJquery', 'jQuery' in window);
 
-const RenderHtmlApp = {
+const RenderHeader = {
 	data() {
 		return {
 			mainTitle: '<h1>Styling Test</h1>',
 			bar: '<div class="w3-bar-block w3-black" style="height: 12px;"></div>',
+		}
+	}
+}
+const RenderMain = {
+	data() {
+		return {
 			cardTitle: '<p>This is a card</p>',
 			cardDesc: '<p>A card is a container for any HTML content</p>'
 		}
 	}
 }
 
-Vue.createApp(RenderHtmlApp).mount('body')
+Vue.createApp(RenderHeader).mount('#header')
+Vue.createApp(RenderMain).mount('#main')
 
 $(document).ready(function(){
 	$("#main").addClass("w3-container w3-flat-peter-river");
