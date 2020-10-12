@@ -20,6 +20,7 @@
 		
 		<!-- Scripts -->
 		<script src="/styling-testing/resources/jquery.min.js"></script>
+		<script src="/styling-testing/resources/VueJS/vue.js"></script>
 	</head>
 	<body>
 		<div id="header">
@@ -37,8 +38,8 @@
 				<header class="w3-container w3-flat-amethyst">
 					<p>This is a card</p>
 				</header>
-				<div class="w3-container">
-					<p>A card is a container for any HTML content</p>
+				<div id="card-desc" class="w3-container">
+					<p v-html="rawHtml"></p>
 				</div>
 			</div>
 			<br>
