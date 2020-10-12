@@ -1,14 +1,15 @@
 Modernizr.addTest('hasJquery', 'jQuery' in window);
 
 const RenderHtmlApp = {
-  data() {
-    return {
+	data() {
+		return {
 			mainTitle: '<h1>Styling Test</h1>',
-			bar: '<div class="w3-bar-block w3-black" style="height: 12px;"><div class="w3-bar-item"></div></div>',
+			bar: '<div class="w3-bar-block w3-black" style="height: 12px;"></div>',
+	    		barItem: '<div class="w3-bar-item"></div>',
 			cardTitle: '<p>This is a card</p>',
-      cardDesc: '<p>A card is a container for any HTML content</p>'
-    }
-  }
+			cardDesc: '<p>A card is a container for any HTML content</p>'
+		}
+	}
 }
 
 Vue.createApp(RenderHtmlApp).mount('body')
