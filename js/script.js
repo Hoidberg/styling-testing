@@ -1,14 +1,14 @@
 Modernizr.addTest('hasJquery', 'jQuery' in window);
 
-const RenderCardDesc = {
+const RenderHtmlApp = {
   data() {
     return {
-      rawHtml: '<p>A card is a container for any HTML content</p>'
+      cardDesc: '<p>A card is a container for any HTML content</p>'
     }
   }
 }
 
-Vue.createApp(RenderCardDesc).mount('#card-desc')
+Vue.createApp(RenderHtmlApp).mount('#card-desc')
 
 $(document).ready(function(){
 	$("#main").addClass("w3-container w3-flat-peter-river");
