@@ -31,12 +31,8 @@
 		<div id="main">
 			<br>
 			<div id="cardTest" class="w3-card-4 w3-flat-midnight-blue">
-				<header class="w3-container w3-flat-amethyst">
-					<p v-html="cardTitle"></p>
-				</header>
-				<div id="card-desc" class="w3-container">
-					<p v-html="cardDesc"></p>
-				</div>
+				<header v-html="cardTitle" class="w3-container w3-flat-amethyst"></header>
+				<div v-html="cardDesc" class="w3-container"></div>
 			</div>
 			<br>
 			<div class="w3-display-container w3-green" style="height:300px;">
