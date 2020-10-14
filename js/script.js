@@ -21,6 +21,10 @@ const RenderMain = {
 Vue.createApp(RenderHeader).mount('#header')
 Vue.createApp(RenderMain).mount('#main')
 
+function loadcode() {
+	w3CodeColor();
+}
+
 $(document).ready(function(){
 	$.get("https://raw.githubusercontent.com/Hoidberg/styling-testing/main/js/script.js", function(data, status){
 		$("#code1").text(data);
@@ -29,5 +33,5 @@ $(document).ready(function(){
 	$("body").addClass("w3-flat-green-sea iconsize1 fontsize1");
 	$("body").css({"overflow": "hidden", "font-family": "Open Sans, sans-serif"});
 	$("link[rel='icon']").addClass("icon");
-	w3CodeColor();
+	loadcode();
 });
