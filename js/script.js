@@ -22,7 +22,7 @@ Vue.createApp(RenderHeader).mount('#header')
 Vue.createApp(RenderMain).mount('#main')
 
 $(document).ready(function(){
-	$.get("https://github.com/Hoidberg/styling-testing/raw/main/js/script.js", function(data, status){
+	$.get("https://raw.githubusercontent.com/Hoidberg/styling-testing/main/js/script.js", function(data, status){
 		$("#code1").text(data);
 	});
 	$("#main").addClass("w3-container w3-flat-peter-river");
