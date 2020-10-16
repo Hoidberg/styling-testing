@@ -28,6 +28,8 @@
 		<!-- Scripts -->
 		<script type="text/javascript" src="/styling-testing/resources/jQuery/jquery.min.js"></script>
 		<script type="text/javascript" src="/styling-testing/resources/VueJS/vue.js"></script>
+		<link as="script" href="/styling-testing/js/script.js" importance="high" rel="preload">
+		<script type="text/javascript" src="/styling-testing/js/script.js"></script>
 	</head>
 	<body>
 		<div id="header">
@@ -104,7 +106,6 @@
 			</pre>
 		</div>
 		<script type="text/javascript" src="/styling-testing/resources/modernizr/modernizr.min.js"></script>
-		<script type="text/javascript" src="/styling-testing/js/script.js"></script>
 		<script>
 			$(document).ready(function(){
 				$.get("https://raw.githubusercontent.com/Hoidberg/styling-testing/main/js/script.js", function(data, status){
