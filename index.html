@@ -117,18 +117,9 @@
 		</div>
 		
 		<!-- Scripts -->
-		<script type="text/javascript" src="/styling-testing/resources/RequireJS/require.js"></script>
+		<script type="text/javascript" data-main="/styling-testing/js/main.js" src="/styling-testing/resources/RequireJS/require.js"></script>
 		<script type="text/javascript" src="/styling-testing/js/script.js"></script>
 		<script>
-			require.config({
-				baseUrl: "/styling-testing/resources",
-				paths: {
-					jquery: 'jQuery/jquery.min.js',
-					vuejs: 'VueJS/vue.js',
-					modernizr: 'modernizr/modernizr.min.js',
-				},
-				waitSeconds: 30
-			});
 			$(document).ready(function(){
 				$.get("https://raw.githubusercontent.com/Hoidberg/styling-testing/main/js/script.js", function(data, status){
 					$("#code1").text(data);
