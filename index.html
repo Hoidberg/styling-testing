@@ -31,9 +31,9 @@
 		<link crossorigin="anonymous" media="all" integrity="sha512-0adxw3BoYSnJwgghezg1pKgXavzItBmAVOv7W31T3MQfzTXKl1578+7Y3ROuBNtIJob6JzFC9RZRxtSCOfP45g==" rel="icon" type="image/svg+xml" href="/styling-testing/favicons/favicon.svg">
 		
 		<!-- Libraries -->
-		<script type="text/javascript" src="/styling-testing/resources/jQuery/jquery.min.js"></script>
-		<script type="text/javascript" src="/styling-testing/resources/VueJS/vue.js"></script>
-		<script type="text/javascript" src="/styling-testing/resources/modernizr/modernizr.min.js"></script>
+		<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="/styling-testing/resources/jQuery/jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="vuejs" src="/styling-testing/resources/VueJS/vue.js"></script>
+		<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modernizr" src="/styling-testing/resources/modernizr/modernizr.min.js"></script>
 		
 		<!-- Scripts -->
 		<link as="script" href="https://www.google-analytics.com/analytics.js" importance="high" rel="preload">
@@ -117,9 +117,18 @@
 		</div>
 		
 		<!-- Scripts -->
-		<link as="script" href="/styling-testing/js/script.js" importance="high" rel="preload">
+		<script type="text/javascript" src="/styling-testing/resources/RequireJS/require.js"></script>
 		<script type="text/javascript" src="/styling-testing/js/script.js"></script>
 		<script>
+			require.config({
+				baseUrl: "/styling-testing/resources",
+				paths: {
+					jquery: 'jQuery/jquery.min.js',
+					vuejs: 'VueJS/vue.js',
+					modernizr: 'modernizr/modernizr.min.js',
+				},
+				waitSeconds: 30
+			});
 			$(document).ready(function(){
 				$.get("https://raw.githubusercontent.com/Hoidberg/styling-testing/main/js/script.js", function(data, status){
 					$("#code1").text(data);
