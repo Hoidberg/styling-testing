@@ -28,11 +28,6 @@
 		<link rel="stylesheet" href="/styling-testing/fonts/OpenSans.css">
 		<link as="style" href="/styling-testing/libraries/fontawesome/css/all.min.css" importance="high" rel="preload">
 		<link rel="stylesheet" href="/styling-testing/libraries/fontawesome/css/all.min.css">
-		<style>
-			body {
-				content: "Flexboxes aren't supported!";
-			}
-		</style>
 		
 		<!-- Icons -->
 		<link crossorigin="anonymous" media="all" integrity="sha512-pzLLd+y0cUrg6/n1a67KmWv/uHfZjRb2CETGxgLYah0aKp/yXtpL7+TC1ksnN3C1mtMGRo+UGGHxYrNhMDGOmg==" rel="alternate icon" type="image/png" href="/styling-testing/favicons/favicon.png">
@@ -128,11 +123,14 @@
 		<script type="text/javascript" data-main="/styling-testing/js/main.js" src="/styling-testing/resources/RequireJS/require.js"></script>
 		<script type="text/javascript" src="/styling-testing/js/script.js"></script>
 		<script>
-			$(document).ready(function(){
-				$.get("https://raw.githubusercontent.com/Hoidberg/styling-testing/main/js/script.js", function(data, status){
-					$("#code1").text(data);
+			jQuery.noConflict();
+			(function( $ ) {
+				$(function() {
+					$.get("https://raw.githubusercontent.com/Hoidberg/styling-testing/main/js/script.js", function(data, status){
+						$("#code1").text(data);
+					});
 				});
-			});
+			})(jQuery);
 		</script>
 	</body>
 </html>
