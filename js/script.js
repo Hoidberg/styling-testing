@@ -24,6 +24,6 @@ Vue.createApp(RenderHeader).mount('#header')
 Vue.createApp(RenderMain).mount('#main')
 
 j("#main").addClass("w3-container w3-flat-peter-river");
-j("body").addClass("w3-flat-green-sea iconsize1 fontsize1");
-j("body").css({"overflow": "hidden", "font-family": "Open Sans, sans-serif", "background-image": "url('https://i.pinimg.com/originals/27/18/2f/27182f4f61a041bfc1e6af79821316a6.jpg')", "background-repeat": "repeat", "background-blend-mode": "overlay"});
+j("body").addClass("iconsize1 fontsize1");
+j("body").css({"overflow": "hidden", "font-family": "Open Sans, sans-serif", "background-image": "url('https://3.bp.blogspot.com/-EmR1DjLYxYU/UhKNSsqUEgI/AAAAAAAALCM/88EZ6wZHNIE/s1600/Green-Grass-Ground-Texture-DISP.jpg')", "background-repeat": "repeat", "background-blend-mode": "overlay", "background-size": "25px 25px", "background-color": "#136d15"});
 j("link[rel='icon']").addClass("icon");
