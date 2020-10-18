@@ -25,5 +25,5 @@ Vue.createApp(RenderMain).mount('#main')
 
 j("#main").addClass("w3-container w3-flat-peter-river");
 j("body").addClass("iconsize1 fontsize1");
-j("body").css({"overflow": "hidden", "font-family": "Open Sans, sans-serif", "background-image": "url('https://3.bp.blogspot.com/-EmR1DjLYxYU/UhKNSsqUEgI/AAAAAAAALCM/88EZ6wZHNIE/s1600/Green-Grass-Ground-Texture-DISP.jpg')", "background-repeat": "repeat", "background-blend-mode": "overlay", "background-size": "25px 25px", "background-color": "#136d15"});
+j("body").css({"overflow": "hidden", "font-family": "Open Sans, sans-serif", "background-image": "url('https://3.bp.blogspot.com/-EmR1DjLYxYU/UhKNSsqUEgI/AAAAAAAALCM/88EZ6wZHNIE/s1600/Green-Grass-Ground-Texture-DISP.jpg')", "background-repeat": "repeat", "background-blend-mode": "overlay", "background-size": "50px 50px", "background-color": "#136d15"});
 j("link[rel='icon']").addClass("icon");
