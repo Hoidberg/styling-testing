@@ -1,3 +1,5 @@
+var j = jQuery.noConflict();
+
 Modernizr.addTest('hasJquery', 'jQuery' in window);
 
 const RenderHeader = {
@@ -21,9 +23,7 @@ const RenderMain = {
 Vue.createApp(RenderHeader).mount('#header')
 Vue.createApp(RenderMain).mount('#main')
 
-$(document).ready(function(){
-	$("#main").addClass("w3-container w3-flat-peter-river");
-	$("body").addClass("w3-flat-green-sea iconsize1 fontsize1");
-	$("body").css({"overflow": "hidden", "font-family": "Open Sans, sans-serif"});
-	$("link[rel='icon']").addClass("icon");
-});
+j("#main").addClass("w3-container w3-flat-peter-river");
+j("body").addClass("w3-flat-green-sea iconsize1 fontsize1");
+j("body").css({"overflow": "hidden", "font-family": "Open Sans, sans-serif"});
+j("link[rel='icon']").addClass("icon");
