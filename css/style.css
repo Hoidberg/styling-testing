@@ -1,12 +1,10 @@
-.flex-space {
-	display: inline-flex;
-	width: calc(var(width) + 16px);
-	height: calc(var(height) + 16px);
-	justify-content: center;
-	align-items: center;
-}
 *, *::before, *::after {
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+body {
+	background-image: url("https://i.pinimg.com/originals/27/18/2f/27182f4f61a041bfc1e6af79821316a6.jpg");
+	background-repeat: repeat;
+	background-blend-mode: overlay;
 }
