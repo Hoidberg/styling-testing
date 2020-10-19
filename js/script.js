@@ -35,3 +35,7 @@ j("body").css({
 	"background-color": "#136d15"
 });
 j("link[rel='icon']").addClass("icon");
+
+if (Modernizr.mq('only all and (max-width: 480px)')) {
+	j("body").addClass("w3-mobile");
+}
