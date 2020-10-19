@@ -35,6 +35,7 @@ j("body").css({
 	"background-color": "#136d15"
 });
 j("table").wrap('<div class="w3-responsive"></div>');
+j("table").addClass("w3-table");
 j("link[rel='icon']").addClass("icon");
 
 if (Modernizr.mq('only all and (max-width: 480px)')) {
