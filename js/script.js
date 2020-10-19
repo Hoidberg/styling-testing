@@ -36,19 +36,18 @@ j("body").css({
 });
 j("link[rel='icon']").addClass("icon");
 
-function check() {
-	if (Modernizr.mq('only all and (max-width: 480px)')) {
-		if (j("body").hasClass("w3-mobile") == false) {
-			j("body").addClass("w3-mobile");
-		}
-	} else {
-		if (j("body").hasClass("w3-mobile") == true) {
-			j("body").removeClass("w3-mobile");
-		}
+window.onload = function () {
+	for (;;){
+		setTimeout(function () {
+			if (Modernizr.mq('only all and (max-width: 480px)')) {
+				if (j("body").hasClass("w3-mobile") == false) {
+					j("body").addClass("w3-mobile");
+				}
+			} else {
+				if (j("body").hasClass("w3-mobile") == true) {
+					j("body").removeClass("w3-mobile");
+				}
+			}
+		}, 250);
 	}
 }
-
-do {
-	window.setTimeout(check, 250);
-}
-while (true);
