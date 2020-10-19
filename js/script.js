@@ -34,10 +34,21 @@ j("body").css({
 	"background-size": "150px 150px",
 	"background-color": "#136d15"
 });
-j("table").wrap('<div class="w3-responsive"></div>');
-j("table").addClass("w3-table");
 j("link[rel='icon']").addClass("icon");
 
-if (Modernizr.mq('only all and (max-width: 480px)')) {
-	j("body").addClass("w3-mobile");
+function check() {
+	if (Modernizr.mq('only all and (max-width: 480px)')) {
+		if (j("body").hasClass("w3-mobile") == false) {
+			j("body").addClass("w3-mobile");
+		}
+	} else {
+		if (j("body").hasClass("w3-mobile") == true) {
+			j("body").removeClass("w3-mobile");
+		}
+	}
 }
+
+do {
+	window.setTimeout(check, 250);
+}
+while (true);
