@@ -22,7 +22,6 @@ const RenderMain = {
 
 Vue.createApp(RenderHeader).mount('#header')
 Vue.createApp(RenderMain).mount('#main')
-
 j("#main").addClass("w3-container w3-flat-peter-river");
 j("body").addClass("iconsize1 fontsize1");
 j("body").css({
@@ -35,3 +34,8 @@ j("body").css({
 	"background-color": "#136d15"
 });
 j("link[rel='icon']").addClass("icon");
+
+j.get("https://raw.githubusercontent.com/Hoidberg/styling-testing/main/js/script.js", function(n,i) {
+	j("#code1").text(n);
+});
+w3CodeColor();
