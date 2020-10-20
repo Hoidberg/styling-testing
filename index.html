@@ -112,21 +112,23 @@
 				</div>
 			</div>
 			<br>
-			<div class="w3-code jsHigh notranslate" style="word-wrap: break-word; white-space: pre;">
-				window.onload = function() {
-					var interval = setInterval(function() {
-						if (Modernizr.mq('only all and (max-width: 480px)')) {
-							if (j("body").hasClass("w3-mobile") == false) {
-								j("body").addClass("w3-mobile");
+			<pre>
+				<div class="w3-code jsHigh notranslate">
+					window.onload = function() {
+						var interval = setInterval(function() {
+							if (Modernizr.mq('only all and (max-width: 480px)')) {
+								if (j("body").hasClass("w3-mobile") == false) {
+									j("body").addClass("w3-mobile");
+								}
+							} else {
+								if (j("body").hasClass("w3-mobile") == true) {
+									j("body").removeClass("w3-mobile");
+								}
 							}
-						} else {
-							if (j("body").hasClass("w3-mobile") == true) {
-								j("body").removeClass("w3-mobile");
-							}
-						}
-					}, 250);
-				}
-			</div>
+						}, 250);
+					}
+				</div>
+			</pre>
 		</div>
 		
 		<!-- Scripts -->
