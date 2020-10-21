@@ -3,3 +3,9 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+pre {
+	display: block;
+	font-family: monospace;
+	white-space: pre;
+	margin: initial;
+}
