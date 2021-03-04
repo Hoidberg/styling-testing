@@ -1,6 +1,6 @@
 var j = jQuery.noConflict();
 
-window.onload = function() {
+j( document ).ready(function() {
 	var interval = setInterval(function() {
 		if (Modernizr.mq('only all and (max-width: 480px)')) {
 			if (j("body").hasClass("w3-mobile") == false) {
@@ -12,4 +12,4 @@ window.onload = function() {
 			}
 		}
 	}, 250);
-}
+});
