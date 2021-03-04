@@ -1,4 +1,4 @@
-var j = $.noConflict();
+var j = jQuery.noConflict();
 
 window.onload = function() {
 	var interval = setInterval(function() {
