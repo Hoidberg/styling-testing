@@ -1,4 +1,4 @@
-var j = jQuery.noConflict();
+$.noConflict();
 
 Modernizr.addTest('hasJquery', 'jQuery' in window);
 
@@ -20,13 +20,13 @@ const RenderMain = {
 	}
 }
 
-j(document).ready(function() {
+jQuery( document ).ready(function() {
 	Vue.createApp(RenderHeader).mount('#header');
 	Vue.createApp(RenderMain).mount('#main');
 	
-	j("#main").addClass("w3-container w3-flat-peter-river");
-	j("body").addClass("iconsize1 fontsize1");
-	j("body").css({
+	jQuery("#main").addClass("w3-container w3-flat-peter-river");
+	jQuery("body").addClass("iconsize1 fontsize1");
+	jQuery("body").css({
 		"overflow": "auto",
 		"font-family": "Open Sans, sans-serif",
 		"background-image": "url('https://3.bp.blogspot.com/-EmR1DjLYxYU/UhKNSsqUEgI/AAAAAAAALCM/88EZ6wZHNIE/s1600/Green-Grass-Ground-Texture-DISP.jpg')",
@@ -35,5 +35,5 @@ j(document).ready(function() {
 		"background-size": "150px 150px",
 		"background-color": "#136d15"
 	});
-	j("link[rel='icon']").addClass("icon");
+	jQuery("link[rel='icon']").addClass("icon");
 });
