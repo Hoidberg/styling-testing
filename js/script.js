@@ -20,20 +20,20 @@ const RenderMain = {
 	}
 }
 
-j(window).on("load",function() {
+j(function() {
 	Vue.createApp(RenderHeader).mount('#header');
 	Vue.createApp(RenderMain).mount('#main');
+	
+	j("#main").addClass("w3-container w3-flat-peter-river");
+	j("body").addClass("iconsize1 fontsize1");
+	j("body").css({
+		"overflow": "auto",
+		"font-family": "Open Sans, sans-serif",
+		"background-image": "url('https://3.bp.blogspot.com/-EmR1DjLYxYU/UhKNSsqUEgI/AAAAAAAALCM/88EZ6wZHNIE/s1600/Green-Grass-Ground-Texture-DISP.jpg')",
+		"background-repeat": "repeat",
+		"background-blend-mode": "overlay",
+		"background-size": "150px 150px",
+		"background-color": "#136d15"
+	});
+	j("link[rel='icon']").addClass("icon");
 });
-
-j("#main").addClass("w3-container w3-flat-peter-river");
-j("body").addClass("iconsize1 fontsize1");
-j("body").css({
-	"overflow": "auto",
-	"font-family": "Open Sans, sans-serif",
-	"background-image": "url('https://3.bp.blogspot.com/-EmR1DjLYxYU/UhKNSsqUEgI/AAAAAAAALCM/88EZ6wZHNIE/s1600/Green-Grass-Ground-Texture-DISP.jpg')",
-	"background-repeat": "repeat",
-	"background-blend-mode": "overlay",
-	"background-size": "150px 150px",
-	"background-color": "#136d15"
-});
-j("link[rel='icon']").addClass("icon");
