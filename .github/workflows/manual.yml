@@ -1,0 +1,20 @@
+name: Main
+
+on:
+  push:
+    branches:
+    - main
+    - release/*
+
+jobs:
+  JS:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Cache
+        uses: actions/cache@v2.1.4
+        with:
+          # A list of files, directories, and wildcard patterns to cache and restore
+          path: /js/
+          # An explicit key for restoring and saving the cache
+          key: CA6279E74E77B186A4833DD45B67F
