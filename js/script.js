@@ -20,8 +20,10 @@ const RenderMain = {
 	}
 }
 
-Vue.createApp(RenderHeader).mount('#header')
-Vue.createApp(RenderMain).mount('#main')
+j(window).on("load",function() {
+	Vue.createApp(RenderHeader).mount('#header');
+	Vue.createApp(RenderMain).mount('#main');
+});
 
 j("#main").addClass("w3-container w3-flat-peter-river");
 j("body").addClass("iconsize1 fontsize1");
