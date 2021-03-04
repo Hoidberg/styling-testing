@@ -8,11 +8,11 @@ jobs:
     - name: checkout
       uses: actions/checkout@v1
       
-- name: Proof HTML
-  # You may pin to the exact commit or the version.
-  # uses: anishathalye/proof-html@47a787591515a207d6fc8ef13e016ac42cb877c8
-  uses: anishathalye/proof-html@v1.1.0
-  with:
-    directory: ./
-    check_external_hash: true
-    check_html: true
+    - name: Proof HTML
+      # You may pin to the exact commit or the version.
+      # uses: anishathalye/proof-html@47a787591515a207d6fc8ef13e016ac42cb877c8
+      uses: anishathalye/proof-html@v1.1.0
+      with:
+        directory: ./
+        check_external_hash: true
+        check_html: true
