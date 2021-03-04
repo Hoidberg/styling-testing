@@ -20,7 +20,7 @@ const RenderMain = {
 	}
 }
 
-j(function() {
+j(document).ready(function() {
 	Vue.createApp(RenderHeader).mount('#header');
 	Vue.createApp(RenderMain).mount('#main');
 	
