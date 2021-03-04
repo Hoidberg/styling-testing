@@ -1,7 +1,6 @@
 name: Deploy the static file to GitHub Page
 on: [push]
 jobs:
-
   build:
     name: Build
     runs-on: ubuntu-latest
