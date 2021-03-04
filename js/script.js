@@ -1,4 +1,4 @@
-var j = $.noConflict();
+var j = jQuery.noConflict();
 
 Modernizr.addTest('hasJquery', 'jQuery' in window);
 
